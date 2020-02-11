@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Icon from 'react-native-vector-icons/dist/FontAwesome';
 import {
     Container,
+    Label,
     ViewInput,
     InputSearch,
     Content,
@@ -24,10 +25,10 @@ export default function Stores({ navigation }) {
         <>
           <Container>
             <ViewInput>
-              <Icon name="search" size={22} color={'#b8b8b8'} />
+              <Icon name="search" size={22} color={'#5557B0'} />
               <InputSearch
                 placeholder="Buscar Lojas"
-                placeholderTextColor={"#b8b8b8"}
+                placeholderTextColor={"#5557B0"}
                 keyboardType="email-address"
                 autoCapitalize="none"
                 value={search}
@@ -35,11 +36,13 @@ export default function Stores({ navigation }) {
               />
             </ViewInput>
             
+            <Label>Espresas Destaques</Label>
+
             <Content>
-                <Card elevation={8}>
+                <Card elevation={4}>
                     <Row>
                         <Col>
-                            <ViewLogo elevation={8}>
+                            <ViewLogo elevation={4}>
                                 <LogoCompany resizeMode="stretch" source={{ uri: 'https://i.pinimg.com/originals/e8/cb/48/e8cb48d2ee29eaf58a4f8da10dec3c07.png' }} />
                             </ViewLogo>
                         </Col>
@@ -51,10 +54,10 @@ export default function Stores({ navigation }) {
                         </Col>
                     </Row>
                 </Card>
-                <Card elevation={8}>
+                <Card elevation={4}>
                     <Row>
                         <Col>
-                            <ViewLogo elevation={8}>
+                            <ViewLogo elevation={4}>
                                 <LogoCompany resizeMode="stretch" source={{ uri: 'https://1.bp.blogspot.com/-9usc5-JlKuQ/VMqq4hx1vkI/AAAAAAAAABI/DZQQB7qEsDM/s1600/Logo%2BVitoria%2BLanches.png' }} />
                             </ViewLogo>
                         </Col>
@@ -66,10 +69,10 @@ export default function Stores({ navigation }) {
                         </Col>
                     </Row>
                 </Card>
-                <Card elevation={8}>
+                <Card elevation={4}>
                     <Row>
                         <Col>
-                            <ViewLogo elevation={8}>
+                            <ViewLogo elevation={4}>
                                 <LogoCompany resizeMode="stretch" source={{ uri: 'https://www.guiadecaxiasdosul.com/uploads/painel/empresa/15669548241771627584.jpg' }} />
                             </ViewLogo>
                         </Col>
@@ -81,10 +84,10 @@ export default function Stores({ navigation }) {
                         </Col>
                     </Row>
                 </Card>
-                <Card elevation={8}>
+                <Card elevation={4}>
                     <Row>
                         <Col>
-                            <ViewLogo elevation={8}>
+                            <ViewLogo elevation={4}>
                                 <LogoCompany resizeMode="stretch" source={{ uri: 'https://i.pinimg.com/originals/a6/43/12/a643124b7abdb2d76421b437a79c2f75.jpg' }} />
                             </ViewLogo>
                         </Col>

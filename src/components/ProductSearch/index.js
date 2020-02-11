@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 
 import {
     Container,
+    Label,
     ViewCard,
     MenuImage,
 } from './styles';
@@ -9,6 +10,7 @@ import {
 export default function ProductSearch({ navigation }) {
     return (
         <>
+            <Label>O que procura?</Label>
             <Container>
                 <ViewCard elevation={10} >
                     <MenuImage source={{ uri: 'https://www.programaconsumer.com.br/blog/wp-content/uploads/2018/11/pizzaria-app.png' }} resizeMode="stretch" />

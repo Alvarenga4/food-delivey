@@ -1,5 +1,12 @@
 import styled from 'styled-components/native';
 
+export const Label = styled.Text`
+  font-size: 18;
+  color: #5557B0;
+  font-family: Roboto-Light;
+  margin-left: 20;
+`;
+
 export const Container = styled.ScrollView.attrs({
     horizontal: true,
     showsHorizontalScrollIndicator: false,
@@ -8,6 +15,7 @@ export const Container = styled.ScrollView.attrs({
   margin-top: 20;
   flex: none;
 `;
+
 
 export const ViewCard = styled.View`
   width: 150;
