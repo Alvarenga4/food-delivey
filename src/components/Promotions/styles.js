@@ -21,7 +21,7 @@ export const Content = styled.ScrollView.attrs({
 })`
   margin-top: 50;
   margin-bottom: 50;
-  margin-left: 5
+  margin-left: 5;
   flex: none;
 `;
 
