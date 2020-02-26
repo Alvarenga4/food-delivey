@@ -1,10 +1,27 @@
 import React from 'react';
 import { createAppContainer } from 'react-navigation';
+import {createStackNavigator} from 'react-navigation-stack';
 import {createMaterialBottomTabNavigator} from 'react-navigation-material-bottom-tabs';
 import Icon from 'react-native-vector-icons/dist/FontAwesome';
 
+import HeaderInfo from './components/HeaderInfo';
+
 import Main from './pages/Main';
 import Profile from './pages/Profile';
+
+const StackNav = createStackNavigator({
+  Main: {
+    screen: Main,
+    navigationOptions: ({navigation}) => {
+      return {
+        headerTitle: <HeaderInfo navigation={navigation} />,
+        headerStyle: {
+          backgroundColor: '#000',
+        },
+      };
+    },
+  }
+})
 
 const BottomTab = createAppContainer(
   createMaterialBottomTabNavigator({
@@ -12,7 +29,7 @@ const BottomTab = createAppContainer(
       screen: Main,
       navigationOptions: ({navigation}) => {
           return {
-            headerShown: false,
+            headerShown: true,
             tabBarVisible: true,
             tabBarLabel: 'Inicio',
             tabBarIcon: ({tintColor}) => (
@@ -36,7 +53,7 @@ const BottomTab = createAppContainer(
     },
     }, {
       initialRouteName: 'Main',
-      activeColor: '#5557B0',
+      activeColor: '#000',
       inactiveColor: '#b8b8b8',
       barStyle: {
         backgroundColor: '#FFF',
