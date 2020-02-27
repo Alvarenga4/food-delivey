@@ -5,10 +5,10 @@ export const Label = styled.Text`
   color: #000;
   font-family: Roboto-Bold;
   margin-top: 20;
+  margin-left: 20;
 `;
 
 export const Container = styled.View.attrs({
-  paddingHorizontal: 20,
 })`
   background-color: #FFF;
 `;
@@ -25,7 +25,7 @@ export const Content = styled.ScrollView.attrs({
 export const ViewCard = styled.View`
   width: 120;
   height: 80;
-  margin-right: 10;
+  margin-left: 20;
   background-color: #000;
   border-radius: 10;
 `;
@@ -46,4 +46,13 @@ export const MenuLabel = styled.Text`
   color: #f8f8f8;
   font-family: Roboto-Light;
   margin-top: 20;
+`;
+
+export const Row = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+export const Col = styled.View`
+  flex-direction: column;
 `;

@@ -5,6 +5,11 @@ import {
     ViewGrid,
     Row,
     Col,
+    ViewImage,
+    Image,
+    ViewIndicationLabel,
+    IndicationLabel,
+    DescriptionIndication,
     CardImage,
     ProfileImage,
     ViewLabels,
@@ -45,7 +50,12 @@ export default function Profile({ navigation }) {
             <Container>
 
                 <RecommendationView elevation={4}>
-
+                    <ViewIndicationLabel>
+                        <IndicationLabel>
+                            Ganhe R$ 15 indicando o Ifood
+                        </IndicationLabel>
+                        <DescriptionIndication>Convide seus amigos</DescriptionIndication>
+                    </ViewIndicationLabel>
                 </RecommendationView>
 
                 

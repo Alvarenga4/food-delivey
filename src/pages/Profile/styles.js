@@ -22,10 +22,12 @@ export const Row = styled.View`
   flex-direction: row;
   margin-top: 40;
   justify-content: space-between;
+  background-color: #FFF;
 `;
 
 export const Col = styled.View`
   flex-direction: column;
+  background-color: #FFF;
 `;
 
 export const CardImage = styled.View`
@@ -82,16 +84,41 @@ export const HateLabel = styled.Text`
   font-size: 14;
 `;
 
-export const RecommendationView = styled.View`
+export const RecommendationView = styled.View.attrs({
+})`
   margin-top: 30;
   margin-left: 20;
-  height: 60;
+  height: 50;
   width: 90%;
   justify-content: center;
   background-color: #FFF;
-  border-radius: 8;
+  border-radius: 5;
 `;
 
+export const ViewIndicationLabel = styled.View.attrs({
+})`
+  justify-content: center;
+  align-items: center;
+`;
+
+export const IndicationLabel = styled.Text`
+  color: #000;
+  font-family: Roboto-Regular;
+  font-weight: bold;
+  font-size: 16;
+`;
+
+export const DescriptionIndication = styled.Text`
+  color: #a5a5a5;
+  font-size: 14;
+  font-family: Roboto-Light;
+`;
+
+
+export const Image = styled.Image`
+  width: 50;
+  height: 50;
+`;
 export const SesionsCards = styled.TouchableOpacity.attrs({
 })`
   width: 100%;

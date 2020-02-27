@@ -21,7 +21,6 @@ export const Content = styled.ScrollView.attrs({
 })`
   margin-top: 50;
   margin-bottom: 50;
-  margin-left: 5;
   flex: none;
 `;
 
@@ -29,7 +28,7 @@ export const Content = styled.ScrollView.attrs({
 export const ViewCard = styled.View`
   width: ${widthScreen};
   height: 160;
-  margin-right: 10;
+  margin-left: 20;
   background-color: #000;
   border-radius: 10;
 `;
