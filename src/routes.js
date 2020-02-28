@@ -9,6 +9,7 @@ import Search from './components/Search';
 
 import Main from './pages/Main';
 import Profile from './pages/Profile';
+import Orders from './pages/Orders';
 
 const StackNav = createStackNavigator({
   Main: {
@@ -45,12 +46,25 @@ const BottomTab = createAppContainer(
         return {
           headerShown: false,
           tabBarVisible: true,
-          tabBarLabel: 'Pesquisar',
+          tabBarLabel: 'Busca',
           tabBarIcon: ({tintColor}) => (
             <Icon name="search" size={22} color={tintColor} />
-        ),
-      };
+          ),
+        };
+      },
     },
+    Orders: {
+      screen: Orders,
+      navigationOptions: ({navigation}) => {
+        return {
+          headerShown: false,
+          tabBarVisible: true,
+          tabBarLabel: 'Pedidos',
+          tabBarIcon: ({tintColor}) => (
+            <Icon name="file-text-o" size={22} color={tintColor} />
+          ),
+        };
+      },
     },
     Profile: {
       screen: Profile,
@@ -68,7 +82,7 @@ const BottomTab = createAppContainer(
     }, {
       initialRouteName: 'Main',
       activeColor: '#000',
-      inactiveColor: '#b8b8b8',
+      inactiveColor: '#181818',
       barStyle: {
         backgroundColor: '#FFF',
         borderTopColor: '#FFF',
