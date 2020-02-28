@@ -46,21 +46,21 @@ export const Col = styled.View`
 
 export const ViewLogo = styled.ImageBackground.attrs({
   imageStyle: {
-    borderRadius: 80,
-    width: 90,
-    height: 90,
+    borderRadius: 120,
+    width: 60,
+    height: 60,
   }
 })`
-  width: 90;
-  height: 90;
+  width: 60;
+  height: 60;
   margin-right: 10;
   background-color: #000;
-  border-radius: 80;
+  border-radius: 120;
 `;
 
 export const LogoCompany = styled.Image`
-  width: 80;
-  height: 80;
+  width: 60;
+  height: 60;
   border-radius: 10;
 `;
 

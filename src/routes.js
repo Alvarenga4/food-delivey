@@ -5,6 +5,7 @@ import {createMaterialBottomTabNavigator} from 'react-navigation-material-bottom
 import Icon from 'react-native-vector-icons/dist/FontAwesome';
 
 import HeaderInfo from './components/HeaderInfo';
+import Search from './components/Search';
 
 import Main from './pages/Main';
 import Profile from './pages/Profile';
@@ -37,6 +38,19 @@ const BottomTab = createAppContainer(
           ),
         };
       },
+    },
+    Search: {
+      screen: Search,
+      navigationOptions: ({navigation}) => {
+        return {
+          headerShown: false,
+          tabBarVisible: true,
+          tabBarLabel: 'Pesquisar',
+          tabBarIcon: ({tintColor}) => (
+            <Icon name="search" size={22} color={tintColor} />
+        ),
+      };
+    },
     },
     Profile: {
       screen: Profile,

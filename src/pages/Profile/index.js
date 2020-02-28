@@ -52,7 +52,7 @@ export default function Profile({ navigation }) {
                 <RecommendationView elevation={4}>
                     <ViewIndicationLabel>
                         <IndicationLabel>
-                            Ganhe R$ 15 indicando o Ifood
+                            Ganhe R$ 30 indicando o Food Delivey
                         </IndicationLabel>
                         <DescriptionIndication>Convide seus amigos</DescriptionIndication>
                     </ViewIndicationLabel>
